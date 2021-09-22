@@ -43,7 +43,8 @@ ggqqplot(my_data$len)
 ### Nem sempre a visualização da distribuição dos dados por meio de gráficos é confiável, 
 ### portanto, deve-se realizar o teste de significância de Shapiro-Wilk ou Kolmogorov-Smirnov.
 
-### O método de Shapiro-Wilk apresenta maior poder e é mais recomendado que o teste de Kolmogorov.
+### O método de Shapiro-Wilk apresenta maior poder e é mais recomendado que o teste de Kolmogorov,
+### entretanto, é utilizado para amostras maiores que 3 e menores que 5000.
 
 shapiro.test(my_data$len)
 
